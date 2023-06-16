@@ -34,10 +34,11 @@ QUESTION_OPTIONS = {
 for question, options in QUESTION_OPTIONS.items():
     correct_option = options[0]
     sorted_options = sorted(options)
-    for option in sorted(options):
-        print(f"  - {option}")
+    for label, option in enumerate(sorted_options):
+        print(f" {label}) {option}")
 
-    answer = input(f"{question}? ")
+    answer_label = int(input(f"{question}? "))
+    answer = sorted_options[answer_label]
     if answer == correct_option:
         print("Correct!")
     else:
