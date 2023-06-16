@@ -79,7 +79,7 @@ for num, (question, options) in enumerate(questions, start=1):
     for label, option in labeled_options.items():
         print(f" {label}) {option}")
 
-    while (answer_label := input("\nAnswer? ")) not in labeled_options:
+    while (answer_label := input("\nAnswer? \n")) not in labeled_options:
         print(f"Please answer one of {', '.join(labeled_options)}")
 
     answer = labeled_options[answer_label]
