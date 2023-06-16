@@ -42,8 +42,8 @@ for num, (question, options) in enumerate(QUESTION_OPTIONS.items(), start=1):
     for label, option in labeled_options.items():
         print(f" {label}) {option}")
 
-    answer_label = int(input(f"{question}? "))
-    answer = sorted_options[answer_label]
+    answer_label = input("\nAnswer? ")
+    answer = labeled_options.get(answer_label)
     if answer == correct_option:
         print("Correct!")
     else:
