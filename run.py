@@ -43,8 +43,10 @@ for num, (question, options) in enumerate(QUESTION_OPTIONS.items(), start=1):
     for label, option in labeled_options.items():
         print(f" {label}) {option}")
 
-    answer_label = input("\nAnswer? ")
-    answer = labeled_options.get(answer_label)
+    while (answer_label := input("\nAnswer? ")) not in labeled_options:
+        print(f"Please answer one of {', '.join(labeled_options)}")
+
+    answer = labeled_options[answer_label]
     if answer == correct_option:
         correct_answers += 1
         print("Correct! ✅")
@@ -52,3 +54,4 @@ for num, (question, options) in enumerate(QUESTION_OPTIONS.items(), start=1):
         print(f"Wrong! ❌ The correct answer is {correct_option!r}")
 
 print(f"\nYou got {correct_answers} question(s) right out of {num}! ")
+
