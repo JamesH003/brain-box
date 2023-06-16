@@ -32,7 +32,37 @@ QUESTION_OPTIONS = {
     ],
     "What is the capital city of Austria? 🇦🇹": [
         "Vienna", "Berlin", "Moroni", "Tallinn"
-    ]
+    ],
+    "What is the capital city of Czech Republic? 🇨🇿": [
+        "Prague", "Kuwait", "Tirana", "Dublin"
+    ],
+    "What is the capital city of Egypt? 🇪🇬": [
+        "Cairo", "Madrid", "Rome", "Asmara"
+    ],
+    "What is the capital city of Barbados? 🇧🇧": [
+        "Bridgetown", "Niamey", "Nassau", "Roseau"
+    ],
+    "What is the capital city of Sweden? 🇸🇪": [
+        "Stockholm", "San Marino", "Oslo", "Valletta"
+    ],
+    "What is the capital city of Colombia? 🇨🇴": [
+        "Bogota", "Brasilia", "Kingston", "Tehran"
+    ],
+    "What is the capital city of Greece? 🇬🇷": [
+        "Athens", "Port-au-Prince", "Singapore", "Chișinău"
+    ],
+    "What is the capital city of Estonia? 🇪🇪": [
+        "Tallinn", "Baghdad", "Lisbon", "Nursultan"
+    ],
+    "What is the capital city of Germany? 🇩🇪": [
+        "Berlin", "Yaren district", "Munich", "Brussels"
+    ],
+     "What is the capital city of Slovakia? 🇸🇰": [
+        "Bratislava", "Kyiv", "Bucharest", "Athens"
+     ],
+     "What is the capital city of Ireland? 🇮🇪": [
+        "Dublin", "Cardiff", "Paris", "Cork"
+     ]
 }
 
 quantity_questions = min(QUESTION_QUANTITY_PER_GAME, len(QUESTION_OPTIONS))
@@ -61,3 +91,19 @@ for num, (question, options) in enumerate(questions, start=1):
 
 print(f"\nYou got {correct_answers} question(s) right out of {num}! ")
 
+
+
+
+
+
+
+
+
+
+# References
+# https://www.geeksforgeeks.org/python-string-ascii_lowercase/
+# https://realpython.com/python-enumerate/
+# https://www.w3schools.com/python/ref_func_min.asp
+# https://emojipedia.org/search/?q=flags
+# https://www.w3schools.com/python/ref_random_choices.asp
+# https://www.w3schools.com/python/ref_random_sample.asp
