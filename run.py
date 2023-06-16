@@ -1,7 +1,7 @@
 import random
 from string import ascii_lowercase
 
-
+QUESTION_QUANTITY_PER_GAME = 10
 QUESTION_OPTIONS = {
     "What is the capital city of Portugal? 🇵🇹": [
         "Lisbon", "Caracas", "Faro", "Ottawa"
@@ -35,12 +35,17 @@ QUESTION_OPTIONS = {
     ]
 }
 
+quantity_questions = min(QUESTION_QUANTITY_PER_GAME, len(QUESTION_OPTIONS))
+questions = random.sample(list(QUESTION_OPTIONS.items()), k=quantity_questions)
+
 correct_answers = 0
-for num, (question, options) in enumerate(QUESTION_OPTIONS.items(), start=1):
+for num, (question, options) in enumerate(questions, start=1):
     print(f"\nQuestion {num}:")
     print(f"{question}")
     correct_option = options[0]
-    labeled_options = dict(zip(ascii_lowercase, sorted(options)))
+    labeled_options = dict(
+        zip(ascii_lowercase, random.sample(options, k=len(options)))
+    )
     for label, option in labeled_options.items():
         print(f" {label}) {option}")
 
