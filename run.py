@@ -34,6 +34,7 @@ QUESTION_OPTIONS = {
     ]
 }
 
+correct_answers = 0
 for num, (question, options) in enumerate(QUESTION_OPTIONS.items(), start=1):
     print(f"\nQuestion {num}:")
     print(f"{question}")
@@ -45,22 +46,9 @@ for num, (question, options) in enumerate(QUESTION_OPTIONS.items(), start=1):
     answer_label = input("\nAnswer? ")
     answer = labeled_options.get(answer_label)
     if answer == correct_option:
+        correct_answers += 1
         print("Correct! ✅")
     else:
         print(f"Wrong! ❌ The correct answer is {correct_option!r}")
 
-
-# for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
-#     print(f"\nQuestion {num}:")
-#     print(f"{question}?")
-#     correct_answer = alternatives[0]
-#     labeled_alternatives = dict(zip(ascii_lowercase, sorted(alternatives)))
-#     for label, alternative in labeled_alternatives.items():
-#         print(f"  {label}) {alternative}")
-
-#     answer_label = input("\nChoice? ")
-#     answer = labeled_alternatives.get(answer_label)
-#     if answer == correct_answer:
-#         print("⭐ Correct! ⭐")
-#     else:
-#         print(f"The answer is {correct_answer!r}, not {answer!r}")
+print(f"\nYou got {correct_answers} question(s) right out of {num}! ")
