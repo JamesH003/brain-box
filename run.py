@@ -31,4 +31,14 @@ QUESTION_OPTIONS = {
     ]
 }
 
+for question, options in QUESTION_OPTIONS.items():
+    correct_option = options[0]
+    for option in sorted(options):
+        print(f"  - {option}")
+
+    answer = input(f"{question}? ")
+    if answer == correct_option:
+        print("Correct!")
+    else:
+        print(f"Wrong! The correct answer is {correct_option!r}")
 
