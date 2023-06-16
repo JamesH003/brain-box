@@ -2,34 +2,34 @@ from string import ascii_lowercase
 
 
 QUESTION_OPTIONS = {
-    "What is the capital city of Portugal?": [
+    "What is the capital city of Portugal? 🇵🇹": [
         "Lisbon", "Caracas", "Faro", "Ottawa"
     ],
-    "What is the capital city of Denmark?": [
+    "What is the capital city of Denmark? 🇩🇰": [
         "Copenhagen", "Moscow", "Tokyo", "Stockholm"
     ],
-    "What is the capital city of Cuba?": [
+    "What is the capital city of Cuba? 🇨🇺": [
         "Havana", "Jakarta", "Cairo", "Miami"
     ],
-    "What is the capital city of Argentina?": [
+    "What is the capital city of Argentina? 🇦🇷": [
         "Buenos Aires", "Budapest", "Monrovia", "Maseru"
     ],
-    "What is the capital city of Croatia?": [
+    "What is the capital city of Croatia? 🇭🇷": [
         "Zagreb", "Accra", "Damascus", "Split"
     ],
-    "What is the capital city of Lithuania?": [
+    "What is the capital city of Lithuania? 🇱🇹": [
         "Vilnius", "Havana", "Budapest", "Prague"
     ],
-    "What is the capital city of Indonesia?": [
+    "What is the capital city of Indonesia? 🇮🇩": [
         "Jakarta", "Minsk", "Ankara", "Maputo"
     ],
-    "What is the capital city of India?": [
+    "What is the capital city of India? 🇮🇳": [
         "New Delhi", "Riyadh", "Manama", "Kuala Lumpur"
     ],
-    "What is the capital city of Switzerland?": [
+    "What is the capital city of Switzerland? 🇨🇭": [
         "Bern", "Zurich", "Belgrade", "Roseau" 
     ],
-    "What is the capital city of Austria?": [
+    "What is the capital city of Austria? 🇦🇹": [
         "Vienna", "Berlin", "Moroni", "Tallinn"
     ]
 }
@@ -45,9 +45,9 @@ for num, (question, options) in enumerate(QUESTION_OPTIONS.items(), start=1):
     answer_label = input("\nAnswer? ")
     answer = labeled_options.get(answer_label)
     if answer == correct_option:
-        print("Correct!")
+        print("Correct! ✅")
     else:
-        print(f"Wrong! The correct answer is {correct_option!r}")
+        print(f"Wrong! ❌ The correct answer is {correct_option!r}")
 
 
 # for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
