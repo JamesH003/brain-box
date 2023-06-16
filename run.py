@@ -33,6 +33,7 @@ QUESTION_OPTIONS = {
 
 for question, options in QUESTION_OPTIONS.items():
     correct_option = options[0]
+    sorted_options = sorted(options)
     for option in sorted(options):
         print(f"  - {option}")
 
@@ -42,3 +43,16 @@ for question, options in QUESTION_OPTIONS.items():
     else:
         print(f"Wrong! The correct answer is {correct_option!r}")
 
+
+# for question, alternatives in QUESTIONS.items():
+#     correct_answer = alternatives[0]
+#     sorted_alternatives = sorted(alternatives)
+#     for label, alternative in enumerate(sorted_alternatives):
+#         print(f"  {label}) {alternative}")
+
+#     answer_label = int(input(f"{question}? "))
+#     answer = sorted_alternatives[answer_label]
+#     if answer == correct_answer:
+#         print("Correct!")
+#     else:
+#         print(f"The answer is {correct_answer!r}, not {answer!r}")
