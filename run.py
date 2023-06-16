@@ -1,3 +1,6 @@
+from string import ascii_lowercase
+
+
 QUESTION_OPTIONS = {
     "What is the capital city of Portugal?": [
         "Lisbon", "Caracas", "Faro", "Ottawa"
@@ -31,10 +34,12 @@ QUESTION_OPTIONS = {
     ]
 }
 
-for question, options in QUESTION_OPTIONS.items():
+for num, (question, options) in enumerate(QUESTION_OPTIONS.items(), start=1):
+    print(f"\nQuestion {num}:")
+    print(f"{question}")
     correct_option = options[0]
-    sorted_options = sorted(options)
-    for label, option in enumerate(sorted_options):
+    labeled_options = dict(zip(ascii_lowercase, sorted(options)))
+    for label, option in labeled_options.items():
         print(f" {label}) {option}")
 
     answer_label = int(input(f"{question}? "))
@@ -45,15 +50,17 @@ for question, options in QUESTION_OPTIONS.items():
         print(f"Wrong! The correct answer is {correct_option!r}")
 
 
-# for question, alternatives in QUESTIONS.items():
+# for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
+#     print(f"\nQuestion {num}:")
+#     print(f"{question}?")
 #     correct_answer = alternatives[0]
-#     sorted_alternatives = sorted(alternatives)
-#     for label, alternative in enumerate(sorted_alternatives):
+#     labeled_alternatives = dict(zip(ascii_lowercase, sorted(alternatives)))
+#     for label, alternative in labeled_alternatives.items():
 #         print(f"  {label}) {alternative}")
 
-#     answer_label = int(input(f"{question}? "))
-#     answer = sorted_alternatives[answer_label]
+#     answer_label = input("\nChoice? ")
+#     answer = labeled_alternatives.get(answer_label)
 #     if answer == correct_answer:
-#         print("Correct!")
+#         print("⭐ Correct! ⭐")
 #     else:
 #         print(f"The answer is {correct_answer!r}, not {answer!r}")
