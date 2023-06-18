@@ -130,6 +130,10 @@ def show_next_question(question, options):
 
 # Handles user input
 def get_user_selection(question, options):
+    print(f"{question}?")
+    labeled_options = dict(zip(ascii_lowercase, options))
+    for label, option in labeled_options.items():
+        print(f"  {label}) {option}")
     # Handles user errors
 
 
