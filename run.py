@@ -135,6 +135,8 @@ def get_user_selection(question, options):
     for label, option in labeled_options.items():
         print(f"  {label}) {option}")
     # Handles user errors
+    while (answer_label := input("\nAnswer? ")) not in labeled_options:
+        print(f"Please answer one of {', '.join(labeled_options)}")
 
 
 
