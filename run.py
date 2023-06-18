@@ -68,16 +68,7 @@ QUESTION_OPTIONS = {
 quantity_questions = min(QUESTION_QUANTITY_PER_GAME, len(QUESTION_OPTIONS))
 questions = random.sample(list(QUESTION_OPTIONS.items()), k=quantity_questions)
 
-correct_answers = 0
-for num, (question, options) in enumerate(questions, start=1):
-    print(f"\nQuestion {num}:")
-    print(f"{question}")
-    correct_option = options[0]
-    labeled_options = dict(
-        zip(ascii_lowercase, random.sample(options, k=len(options)))
-    )
-    for label, option in labeled_options.items():
-        print(f" {label}) {option}")
+def launch_quiz():
 
     while (answer_label := input("\nAnswer? \n")) not in labeled_options:
         print(f"Please answer one of {', '.join(labeled_options)}")
