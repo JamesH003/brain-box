@@ -88,6 +88,7 @@ def load_question_options(questions, quantity_questions):
 def show_next_question(question, options):
 
 
+def get_user_selection(question, options):
 
 
 
