@@ -82,6 +82,7 @@ def launch_quiz():
 
 print(f"\nYou got {correct_answers} question(s) right out of {num}! ")
 
+def load_question_options(questions, quantity_questions):
 
 
 
