@@ -93,6 +93,10 @@ questions = random.sample(list(QUESTION_OPTIONS.items()), k=quantity_questions)
 
 
 def launch_quiz():
+    # Loads questions
+    questions = load_question_options(
+        QUESTION_OPTIONS, quantity_questions=QUESTION_QUANTITY_PER_GAME
+    )
 
     while (answer_label := input("\nAnswer? \n")) not in labeled_options:
         print(f"Please answer one of {', '.join(labeled_options)}")
