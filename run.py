@@ -107,13 +107,18 @@ def launch_quiz():
     # Result of game
     print(f"\nYou got {correct_answers} question(s) right out of {num}! ")
 
+
+# Loads questions
 def load_question_options(questions, quantity_questions):
 
 
+# Calls next question and verifies right or wrong user selection
 def show_next_question(question, options):
 
 
+# Handles user input
 def get_user_selection(question, options):
+    # Handles user errors
 
 
 
