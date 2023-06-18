@@ -118,6 +118,14 @@ def load_question_options(questions, quantity_questions):
 def show_next_question(question, options):
     correct_option = options[0]
     sorted_options = random.sample(options, k=len(options))
+    # Verifies right or wrong user selection
+    answer = get_user_selection(question, sorted_options)
+    if answer == correct_option:
+        print("Correct! ✅")
+        return True
+    else:
+        print(f"Wrong! ❌ The correct answer is {correct_option!r}, not {answer!r}")
+        return False
 
 
 # Handles user input
