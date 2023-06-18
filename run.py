@@ -116,6 +116,8 @@ def load_question_options(questions, quantity_questions):
 
 # Calls next question and verifies right or wrong user selection
 def show_next_question(question, options):
+    correct_option = options[0]
+    sorted_options = random.sample(options, k=len(options))
 
 
 # Handles user input
