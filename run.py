@@ -85,6 +85,7 @@ print(f"\nYou got {correct_answers} question(s) right out of {num}! ")
 def load_question_options(questions, quantity_questions):
 
 
+def show_next_question(question, options):
 
 
 
