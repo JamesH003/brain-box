@@ -140,6 +140,7 @@ def get_user_selection(question, options):
 
     return labeled_options[answer_label]
 
+# Calls launch_quiz function
 if __name__ == "__main__":
     launch_quiz()
 
