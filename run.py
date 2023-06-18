@@ -98,8 +98,11 @@ def launch_quiz():
         QUESTION_OPTIONS, quantity_questions=QUESTION_QUANTITY_PER_GAME
     )
 
-    while (answer_label := input("\nAnswer? \n")) not in labeled_options:
-        print(f"Please answer one of {', '.join(labeled_options)}")
+    # Main function loop
+    correct_answers = 0
+    for num, (question, options) in enumerate(questions, start=1):
+        print(f"\nQuestion {num}:")
+        correct_answers += show_next_question(question, options)
 
     answer = labeled_options[answer_label]
     if answer == correct_option:
