@@ -138,6 +138,7 @@ def get_user_selection(question, options):
     while (answer_label := input("\nAnswer? ")) not in labeled_options:
         print(f"Please answer one of {', '.join(labeled_options)}")
 
+    return labeled_options[answer_label]
 
 
 
