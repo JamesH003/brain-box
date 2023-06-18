@@ -104,14 +104,8 @@ def launch_quiz():
         print(f"\nQuestion {num}:")
         correct_answers += show_next_question(question, options)
 
-    answer = labeled_options[answer_label]
-    if answer == correct_option:
-        correct_answers += 1
-        print("Correct! ✅")
-    else:
-        print(f"Wrong! ❌ The correct answer is {correct_option!r}")
-
-print(f"\nYou got {correct_answers} question(s) right out of {num}! ")
+    # Result of game
+    print(f"\nYou got {correct_answers} question(s) right out of {num}! ")
 
 def load_question_options(questions, quantity_questions):
 
