@@ -1,4 +1,5 @@
 import random
+import os
 from string import ascii_lowercase
 
 QUESTION_QUANTITY_PER_GAME = 10
@@ -79,6 +80,8 @@ def launch_quiz():
     for num, (question, options) in enumerate(questions, start=1):
         print(f"\nQuestion {num}:")
         correct_answers += show_next_question(question, options)
+        input("\nPress ENTER to continue\n")
+        clear()
 
     # Result of game
     print(f"\nYou got {correct_answers} question(s) right out of {num}! ")
@@ -115,6 +118,15 @@ def get_user_selection(question, options):
         print(f"Please answer one of {', '.join(labeled_options)}")
 
     return labeled_options[answer_label]
+
+
+# Defines clear function
+def clear():
+    """
+    Clear function to clean-up the terminal so things don't get messy.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
+
 
 # Calls launch_quiz function
 if __name__ == "__main__":
