@@ -75,8 +75,12 @@ def loop_questions():
         input("\nPress ENTER to continue\n")
         clear()
 
-    # Result of game
-    print(f"\nYou got {correct_answers} question(s) right out of {num}! ")
+    # plural of questions or question depending on quantity of correct answers
+    q = "question" if correct_answers == 1 else "questions"
+    print(
+        f"\nCongratulations {NAME}!! "
+        f"You got {correct_answers} {q} right out of {num}!\n"
+    )
 
 
 # Loads questions
