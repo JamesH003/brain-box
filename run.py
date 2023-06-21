@@ -2,6 +2,7 @@ import random
 import os
 import time
 from string import ascii_lowercase
+from questions import QUESTIONS_CAPITALS, QUESTIONS_CURRENCIES
 
 MAX_QUESTIONS = 10
 CATEGORY = None
