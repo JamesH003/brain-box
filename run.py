@@ -179,8 +179,8 @@ def clear():
 
 # Calls launch_quiz function
 if __name__ == "__main__":
-    launch_quiz()
-
+    clear()
+    welcome()
 
 
 # References
