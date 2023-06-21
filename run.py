@@ -17,6 +17,24 @@ def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 
+def welcome():
+    """
+    Welcome message, name validation & starts quiz
+    """
+    global NAME
+
+    print("\nWelcome to Brainbox!\n")
+    time.sleep(1)
+
+    # get the user's name
+    validate_name()
+    clear()
+    print(f"Welcome {NAME}!")
+
+    # start the quiz
+    launch_quiz()
+
+
 def launch_quiz():
     """
     Starts the quiz
