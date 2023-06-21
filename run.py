@@ -109,11 +109,13 @@ def play_again():
             print(f"{again} is not valid. Please type 'Y' or 'N'")
 
 
+def load_question_options(questions, max_questions):
+    """
+    Loads questions and returns random order
+    """
+    max_questions = min(max_questions, len(questions))
+    return random.sample(list(questions.items()), k=max_questions)
 
-# Loads questions
-def load_question_options(questions, quantity_questions):
-    quantity_questions = min(quantity_questions, len(questions))
-    return random.sample(list(questions.items()), k=quantity_questions)
 
 
 # Calls next question and verifies right or wrong user selection
