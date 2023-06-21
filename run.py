@@ -15,11 +15,28 @@ def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 
+def launch_quiz():
+    """
+    Starts the quiz
+    """
     global CATEGORY
     global QUESTIONS
+
+    # validate user category selection
+    validate_category()
+
+    # category_selection(selection)
+    time.sleep(0.05)
+
+    QUESTIONS = load_question_options(CATEGORY, MAX_QUESTIONS)
+    time.sleep(0.05)
+    # start the main function loop of questions
+    loop_questions()
+
+
 def validate_name():
     """
-    Welcome message, name validation & starts quiz
+    Validate that the user's name is valid
     """
     global NAME
 
