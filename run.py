@@ -137,8 +137,10 @@ def load_question_options(questions, max_questions):
 
 
 
-# Calls next question and verifies right or wrong user selection
 def show_next_question(question, options):
+    """
+    Calls next question and verifies right or wrong user selection
+    """
     correct_option = options[0]
     sorted_options = random.sample(options, k=len(options))
     # Verifies right or wrong user selection
@@ -156,9 +158,11 @@ def show_next_question(question, options):
         return False
 
 
-# Handles user input
 def get_user_selection(question, options):
-    print(f"{question}?")
+    """
+    Handles user input, labels options with ascii lowercase
+    """
+    print(f"{question}")
     labeled_options = dict(zip(ascii_lowercase, options))
     for label, option in labeled_options.items():
         print(f"  {label}) {option}")
