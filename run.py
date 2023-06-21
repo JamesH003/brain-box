@@ -1,6 +1,9 @@
 import random
 import os
 import time
+import colorama
+from colorama import Fore, Back, Style
+colorama.init(autoreset=True)
 from string import ascii_lowercase
 from questions import QUESTIONS_CAPITALS, QUESTIONS_CURRENCIES
 
@@ -8,7 +11,6 @@ MAX_QUESTIONS = 10
 CATEGORY = None
 QUESTIONS = None
 NAME = ""
-
 
 def clear():
     """
@@ -23,13 +25,14 @@ def welcome():
     """
     global NAME
 
-    print("\nWelcome to Brainbox!\n")
+    
+    print(f"{Fore.CYAN}{Style.BRIGHT} \nWelcome to Brainbox!\n")
     time.sleep(1)
 
     # get the user's name
     validate_name()
     clear()
-    print(f"Welcome {NAME}!")
+    print(f"{Fore.YELLOW}{Style.BRIGHT}Welcome {NAME}!")
 
     # start the quiz
     launch_quiz()
@@ -61,11 +64,11 @@ def validate_name():
     global NAME
 
     while True:
-        NAME = input("Please enter your name: ")
+        NAME = input(f"{Style.BRIGHT}Please enter your name: ")
 
         if not NAME.isalpha() or len(NAME) < 2 or len(NAME) > 15:
             clear()
-            print(f"{NAME} is an invalid name. Please type 2-15 letters.")
+            print(f"{Fore.RED}{Style.BRIGHT}{NAME!r} is an invalid name. Please type 2-15 letters.")
         else:
             break
 
@@ -77,10 +80,10 @@ def validate_category():
     global CATEGORY
 
     time.sleep(0.5)
-    print("Please choose a category: ")
+    print(f"{Style.BRIGHT}Please choose a category: ")
 
     while True:
-        category = input("1. Capitals \n2. Currencies\n")
+        category = input(f"{Fore.GREEN}{Style.BRIGHT}1. Capitals \n2. Currencies\n")
         clear()
 
         if category == "1":
@@ -92,7 +95,7 @@ def validate_category():
             CATEGORY = QUESTIONS_CURRENCIES
             break
         else:
-            print(f"{category} is an invalid option. Please select 1 or 2.")
+            print(f"{Fore.RED}{Style.BRIGHT}{category!r} is an invalid option. Please select 1 or 2.")
 
 
 def loop_questions():
@@ -104,19 +107,19 @@ def loop_questions():
 
     correct_answers = 0
     for num, (question, options) in enumerate(QUESTIONS, start=1):
-        print(f"\nQuestion {num}:")
+        print(f"{Fore.CYAN}{Style.BRIGHT}\nQuestion {num}:")
         correct_answers += show_next_question(question, options)
         # Gives the user control to move onto the next question
         # and clears previous question from terminal
         time.sleep(0.5)
-        input("\nPress ENTER to continue\n")
+        input(f"{Fore.YELLOW}{Style.BRIGHT}\nPress ENTER to continue\n")
         clear()
 
     # plural of questions or question depending on quantity of correct answers
     q = "question" if correct_answers == 1 else "questions"
     print(
-        f"\nCongratulations {NAME}!! "
-        f"You got {correct_answers} {q} right out of {num}!\n"
+        f"{Fore.YELLOW}{Style.BRIGHT}\nCongratulations {NAME}!! "
+        f"{Fore.MAGENTA}{Style.BRIGHT}You got {correct_answers} {q} right out of {num}!\n"
     )
     time.sleep(0.05)
 
@@ -131,19 +134,19 @@ def play_again():
     global NAME
 
     while True:
-        again = input("Do you want to play again? (yes/no)\n").lower()
+        again = input(f"{Fore.CYAN}{Style.BRIGHT}Do you want to play again? (yes/no)\n").lower()
         clear()
         if again[0] == "y":
-            print("... Loading Game ...")
+            print(f"{Fore.YELLOW}{Style.BRIGHT}... Loading Game ...")
             time.sleep(2)
             clear()
             launch_quiz()
             break
         elif again[0] == "n":
-            print(f"Thanks for playing Brainbox {NAME}!")
+            print(f"{Fore.CYAN}{Style.BRIGHT}Thank you for playing Brainbox, {NAME}!")
             break
         else:
-            print(f"{again} is not valid. Please type 'Y' or 'N'")
+            print(f"{Fore.RED}{Style.BRIGHT}{again!r} is not valid. Please type 'Y' or 'N'")
 
 
 def load_question_options(questions, max_questions):
@@ -164,13 +167,13 @@ def show_next_question(question, options):
     # Verifies right or wrong user selection
     answer = get_user_selection(question, sorted_options)
     if answer == correct_option:
-        print("\nCorrect! ✅")
+        print(f"{Fore.GREEN}{Style.BRIGHT}\nCorrect! ✅")
         time.sleep(0.05)
         return True
     else:
         print(
-            "\nWrong! ❌ "
-            f"The correct answer is {correct_option!r}, not {answer!r}"
+            f"{Fore.RED}{Style.BRIGHT}\nWrong! ❌ "
+            f"{Fore.CYAN}{Style.BRIGHT}The correct answer is {correct_option!r}, not {answer!r}"
         )
         time.sleep(0.05)
         return False
@@ -185,8 +188,8 @@ def get_user_selection(question, options):
     for label, option in labeled_options.items():
         print(f"  {label}) {option}")
     # Handles user errors
-    while (answer_label := input("\nAnswer? ").lower()) not in labeled_options:
-        print(f"Please answer one of {', '.join(labeled_options)}")
+    while (answer_label := input(f"{Fore.CYAN}{Style.BRIGHT}\nAnswer? ").lower()) not in labeled_options:
+        print(f"{Fore.RED}{Style.BRIGHT}Please answer one of {', '.join(labeled_options)}")
 
     return labeled_options[answer_label]
 
