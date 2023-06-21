@@ -81,6 +81,12 @@ def loop_questions():
         f"\nCongratulations {NAME}!! "
         f"You got {correct_answers} {q} right out of {num}!\n"
     )
+    time.sleep(0.05)
+
+    # play again
+    play_again()
+
+
 def play_again():
     """
     Ask the user if they want to play again.
