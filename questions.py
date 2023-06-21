@@ -62,64 +62,64 @@ QUESTIONS_CAPITALS = {
 }
 
 QUESTIONS_CURRENCIES = {
-    "What is the currency of Denmark?": [
+    "What is the currency of Denmark? 🇩🇰": [
         "Krone", "Euro", "Lev", "Mark"
     ],
-    "What is the currency of Czech Republic?": [
+    "What is the currency of Czech Republic? 🇨🇿": [
         "Koruna", "Krone", "Yen", "Pound"
     ],
-    "What is the currency of Hungary?": [
+    "What is the currency of Hungary? 🇭🇺": [
         "Forint", "Euro", "Leu", "Lari"
     ],
-    "What is the currency of Poland?": [
+    "What is the currency of Poland? 🇵🇱": [
         "Zloty", "Rupee", "Euro", "Dinar"
     ],
-    "What is the currency of Norway?": [
+    "What is the currency of Norway? 🇳🇴": [
         "Krone", "Denar", "Euro", "Pound"
     ],
-    "What is the currency of Iran?": [
+    "What is the currency of Iran? 🇮🇷": [
         "Rial", "Dinar", "Euro", "Dollar"
     ],
-    "What is the currency of China?": [
+    "What is the currency of China? 🇨🇳": [
         "Yuan", "Dollar", "Won", "Yen"
     ],
-    "What is the currency of North Korea?": [
+    "What is the currency of North Korea? 🇰🇵": [
         "Won", "Rial", "Yuan", "Dollar"
     ],
-    "What is the currency of Turkey?": [
+    "What is the currency of Turkey? 🇹🇷": [
         "Lira", "Pound", "Rial", "Rupee" 
     ],
-    "What is the currency of Australia?": [
+    "What is the currency of Australia? 🇦🇺": [
         "Dollar", "Pound", "Baht", "Peso"
     ],
-    "What is the currency of UAE?": [
+    "What is the currency of UAE? 🇦🇪": [
         "Dirham", "Dollar", "Lira", "Franc"
     ],
-    "What is the currency of Cuba?": [
+    "What is the currency of Cuba? 🇨🇺": [
         "Peso", "Dollar", "Pound", "Krona"
     ],
-    "What is the currency of Spain?": [
+    "What is the currency of Spain? 🇪🇸": [
         "Euro", "Pound", "Peso", "Franc"
     ],
-    "What is the currency of Switzerland?": [
+    "What is the currency of Switzerland? 🇨🇭": [
         "Franc", "Euro", "Krona", "Pound"
     ],
-    "What is the currency of Mexico?": [
+    "What is the currency of Mexico? 🇲🇽": [
         "Peso", "Dollar", "Rial", "Baht"
     ],
-    "What is the currency of Qatar?": [
+    "What is the currency of Qatar? 🇶🇦": [
         "Riyal", "Rupee", "Pound", "Dirham"
     ],
-    "What is the currency of Pakistan?": [
+    "What is the currency of Pakistan? 🇵🇰": [
         "Rupee", "Peso", "Dollar", "Lira"
     ],
-    "What is the currency of Israel?": [
+    "What is the currency of Israel? 🇮🇱": [
         "Shekel", "Yen", "Dollar", "Euro"
     ],
-     "What is the currency of Nepal?": [
+     "What is the currency of Nepal? 🇳🇵": [
         "Rupee", "Pound", "Rial", "Won"
      ],
-     "What is the currency of Iceland?": [
+     "What is the currency of Iceland? 🇮🇸": [
         "Krona", "Euro", "Yen", "Dinar"
      ]
 }

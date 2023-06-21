@@ -204,3 +204,5 @@ if __name__ == "__main__":
 # https://emojipedia.org/search/?q=flags
 # https://www.w3schools.com/python/ref_random_choices.asp
 # https://www.w3schools.com/python/ref_random_sample.asp
+# https://stackoverflow.com/questions/2084508/clear-terminal-in-python
+# https://realpython.com/python-sleep/
