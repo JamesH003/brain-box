@@ -148,6 +148,10 @@ def show_next_question(question, options):
         time.sleep(0.05)
         return True
     else:
+        print(
+            "\nWrong! ❌ "
+            f"The correct answer is {correct_option!r}, not {answer!r}"
+        )
         time.sleep(0.05)
         return False
 
