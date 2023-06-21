@@ -81,6 +81,27 @@ def loop_questions():
         f"\nCongratulations {NAME}!! "
         f"You got {correct_answers} {q} right out of {num}!\n"
     )
+def play_again():
+    """
+    Ask the user if they want to play again.
+    """
+    global NAME
+
+    while True:
+        again = input("Do you want to play again? (yes/no)\n").lower()
+        clear()
+        if again[0] == "y":
+            print("... Loading Game ...")
+            time.sleep(2)
+            clear()
+            launch_quiz()
+            break
+        elif again[0] == "n":
+            print(f"Thanks for playing Brainbox {NAME}!")
+            break
+        else:
+            print(f"{again} is not valid. Please type 'Y' or 'N'")
+
 
 
 # Loads questions
