@@ -169,15 +169,7 @@ def get_user_selection(question, options):
     return labeled_options[answer_label]
 
 
-# Defines clear function
-def clear():
-    """
-    Clear function to clean-up the terminal so things don't get messy.
-    """
-    os.system("cls" if os.name == "nt" else "clear")
-
-
-# Calls launch_quiz function
+# Calls welcome function
 if __name__ == "__main__":
     clear()
     welcome()
