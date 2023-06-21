@@ -2,69 +2,10 @@ import random
 import os
 from string import ascii_lowercase
 
-QUESTION_QUANTITY_PER_GAME = 10
-QUESTION_OPTIONS = {
-    "What is the capital city of Portugal? 🇵🇹": [
-        "Lisbon", "Caracas", "Faro", "Ottawa"
-    ],
-    "What is the capital city of Denmark? 🇩🇰": [
-        "Copenhagen", "Moscow", "Tokyo", "Stockholm"
-    ],
-    "What is the capital city of Cuba? 🇨🇺": [
-        "Havana", "Jakarta", "Cairo", "Miami"
-    ],
-    "What is the capital city of Argentina? 🇦🇷": [
-        "Buenos Aires", "Budapest", "Monrovia", "Maseru"
-    ],
-    "What is the capital city of Croatia? 🇭🇷": [
-        "Zagreb", "Accra", "Damascus", "Split"
-    ],
-    "What is the capital city of Lithuania? 🇱🇹": [
-        "Vilnius", "Havana", "Budapest", "Prague"
-    ],
-    "What is the capital city of Indonesia? 🇮🇩": [
-        "Jakarta", "Minsk", "Ankara", "Maputo"
-    ],
-    "What is the capital city of India? 🇮🇳": [
-        "New Delhi", "Riyadh", "Manama", "Kuala Lumpur"
-    ],
-    "What is the capital city of Switzerland? 🇨🇭": [
-        "Bern", "Zurich", "Belgrade", "Roseau" 
-    ],
-    "What is the capital city of Austria? 🇦🇹": [
-        "Vienna", "Berlin", "Moroni", "Tallinn"
-    ],
-    "What is the capital city of Czech Republic? 🇨🇿": [
-        "Prague", "Kuwait", "Tirana", "Dublin"
-    ],
-    "What is the capital city of Egypt? 🇪🇬": [
-        "Cairo", "Madrid", "Rome", "Asmara"
-    ],
-    "What is the capital city of Barbados? 🇧🇧": [
-        "Bridgetown", "Niamey", "Nassau", "Roseau"
-    ],
-    "What is the capital city of Sweden? 🇸🇪": [
-        "Stockholm", "San Marino", "Oslo", "Valletta"
-    ],
-    "What is the capital city of Colombia? 🇨🇴": [
-        "Bogota", "Brasilia", "Kingston", "Tehran"
-    ],
-    "What is the capital city of Greece? 🇬🇷": [
-        "Athens", "Port-au-Prince", "Singapore", "Chișinău"
-    ],
-    "What is the capital city of Estonia? 🇪🇪": [
-        "Tallinn", "Baghdad", "Lisbon", "Nursultan"
-    ],
-    "What is the capital city of Germany? 🇩🇪": [
-        "Berlin", "Yaren district", "Munich", "Brussels"
-    ],
-     "What is the capital city of Slovakia? 🇸🇰": [
-        "Bratislava", "Kyiv", "Bucharest", "Athens"
-     ],
-     "What is the capital city of Ireland? 🇮🇪": [
-        "Dublin", "Cardiff", "Paris", "Cork"
-     ]
-}
+MAX_QUESTIONS = 10
+CATEGORY = None
+QUESTIONS = None
+NAME = ""
 
 quantity_questions = min(QUESTION_QUANTITY_PER_GAME, len(QUESTION_OPTIONS))
 questions = random.sample(list(QUESTION_OPTIONS.items()), k=quantity_questions)
