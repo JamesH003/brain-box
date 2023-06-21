@@ -32,10 +32,30 @@ def validate_name():
         else:
             break
 
+
+def validate_category():
+    """
+    Ensure the user is selecting a valid category.
+    """
     global CATEGORY
 
-    # start the quiz
-    launch_quiz()
+    time.sleep(0.5)
+    print("Please choose a category: ")
+
+    while True:
+        category = input("1. Capitals \n2. Currencies\n")
+        clear()
+
+        if category == "1":
+            # Capitals
+            CATEGORY = QUESTIONS_CAPITALS
+            break
+        elif category == "2":
+            # Currencies
+            CATEGORY = QUESTIONS_CURRENCIES
+            break
+        else:
+            print(f"{category} is an invalid option. Please select 1 or 2.")
 
 
 def launch_quiz():
