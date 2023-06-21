@@ -1,5 +1,6 @@
 import random
 import os
+import time
 from string import ascii_lowercase
 
 MAX_QUESTIONS = 10
@@ -142,10 +143,10 @@ def show_next_question(question, options):
     # Verifies right or wrong user selection
     answer = get_user_selection(question, sorted_options)
     if answer == correct_option:
-        print("Correct! ✅")
+        time.sleep(0.05)
         return True
     else:
-        print(f"Wrong! ❌ The correct answer is {correct_option!r}, not {answer!r}")
+        time.sleep(0.05)
         return False
 
 
