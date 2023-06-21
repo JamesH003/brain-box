@@ -58,13 +58,20 @@ def validate_category():
             print(f"{category} is an invalid option. Please select 1 or 2.")
 
 
+def loop_questions():
+    """
+    Main function loop
+    """
     global QUESTIONS
     global NAME
 
     correct_answers = 0
-    for num, (question, options) in enumerate(questions, start=1):
+    for num, (question, options) in enumerate(QUESTIONS, start=1):
         print(f"\nQuestion {num}:")
         correct_answers += show_next_question(question, options)
+        # Gives the user control to move onto the next question
+        # and clears previous question from terminal
+        time.sleep(0.5)
         input("\nPress ENTER to continue\n")
         clear()
 
