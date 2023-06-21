@@ -17,13 +17,20 @@ def clear():
 
     global CATEGORY
     global QUESTIONS
+def validate_name():
     """
     Welcome message, name validation & starts quiz
     """
     global NAME
 
-    print("\nWelcome to Brainbox!\n")
-    time.sleep(1)
+    while True:
+        NAME = input("Please enter your name: ")
+
+        if not NAME.isalpha() or len(NAME) < 2 or len(NAME) > 15:
+            clear()
+            print(f"{NAME} is an invalid name. Please type 2-15 letters.")
+        else:
+            break
 
     # get the user's name
     validate_name()
