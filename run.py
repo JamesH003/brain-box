@@ -15,7 +15,8 @@ def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 
-def welcome():
+    global CATEGORY
+    global QUESTIONS
     """
     Welcome message, name validation & starts quiz
     """
