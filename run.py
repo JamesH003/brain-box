@@ -173,7 +173,7 @@ def show_next_question(question, options):
     else:
         print(
             f"{Fore.RED}{Style.BRIGHT}\nWrong! ❌ "
-            f"{Fore.CYAN}{Style.BRIGHT}The correct answer is {correct_option!r}, not {answer!r}"
+            f"{Fore.CYAN}{Style.BRIGHT} The correct answer is {correct_option!r}, not {answer!r}"
         )
         time.sleep(0.05)
         return False
@@ -209,3 +209,4 @@ if __name__ == "__main__":
 # https://www.w3schools.com/python/ref_random_sample.asp
 # https://stackoverflow.com/questions/2084508/clear-terminal-in-python
 # https://realpython.com/python-sleep/
+# https://www.youtube.com/watch?v=u51Zjlnui4Y
