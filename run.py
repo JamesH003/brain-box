@@ -7,8 +7,13 @@ CATEGORY = None
 QUESTIONS = None
 NAME = ""
 
-quantity_questions = min(QUESTION_QUANTITY_PER_GAME, len(QUESTION_OPTIONS))
-questions = random.sample(list(QUESTION_OPTIONS.items()), k=quantity_questions)
+
+def clear():
+    """
+    Clear function to clean-up the terminal so things don't get messy.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
+
 
 def launch_quiz():
     # Loads questions
