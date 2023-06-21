@@ -58,13 +58,9 @@ def validate_category():
             print(f"{category} is an invalid option. Please select 1 or 2.")
 
 
-def launch_quiz():
-    # Loads questions
-    questions = load_question_options(
-        QUESTION_OPTIONS, quantity_questions=QUESTION_QUANTITY_PER_GAME
-    )
+    global QUESTIONS
+    global NAME
 
-    # Main function loop
     correct_answers = 0
     for num, (question, options) in enumerate(questions, start=1):
         print(f"\nQuestion {num}:")
