@@ -144,6 +144,7 @@ def show_next_question(question, options):
     # Verifies right or wrong user selection
     answer = get_user_selection(question, sorted_options)
     if answer == correct_option:
+        print("\nCorrect! ✅")
         time.sleep(0.05)
         return True
     else:
