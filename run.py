@@ -32,10 +32,7 @@ def validate_name():
         else:
             break
 
-    # get the user's name
-    validate_name()
-    clear()
-    print(f"Welcome {NAME}!")
+    global CATEGORY
 
     # start the quiz
     launch_quiz()
