@@ -27,23 +27,53 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ### Existing Features
 
-- **Title for feature #1**
+- **Introduction page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The introduction page features a welcome message in bright cyan text and a prompt to the user to enter their name.
 
-![screenshot](documentation/feature01.png)
+![screenshot](documentation/intro-feature.png)
 
-- **Title for feature #2**
+- **Category options**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The category options page greets the user and allows them to select one of two categories for the quiz. Different coloured text is used to differentiate the sections.
 
-![screenshot](documentation/feature02.png)
+![screenshot](documentation/categ-feature.png)
 
-- **Title for feature #3**
+- **Question page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The question page displays the question in white text with the question number and answer request both in bright cyan. The possible answer options are listed from a - d. 
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/question-feature.png)
+
+- **Correct answer**
+
+    - When the user gets an answer correct, a green 'Correct' appears along with a green checkmark. The user is then prompted to select 'Enter' to move to the next question in their own time.
+
+![screenshot](documentation/correct-ans-feature.png)
+
+- **Incorrect answer**
+
+    - When the user gets an incorrect answer, a red 'Wrong' appears along with a red X. The correct answers is also given in bright cyan text.
+
+![screenshot](documentation/incorrect-ans-feature.png)
+
+- **Result page**
+
+    - The result page displays a message stating 'Congratulations' and how many correct answers the user got out of ten. The grammar for 'answer(s)' is dynamic and changes according to the user receiving more than one correct answer. The user is then offered the chance to play the game again.
+
+![screenshot](documentation/result-feature.png)
+
+- **End of game**
+
+    - Should the user elect not to play again, they are presented with a message thanking them for playing Brainbox in bright cyan text.
+
+![screenshot](documentation/endgame-feature.png)
+
+- **Error handling**
+
+    - Should the user enter an incorrect keyboard selection, they will be presented with bright red text prompting them to select an appropriate option.
+
+![screenshot](documentation/error-handling-feature.png)
 
 <!-- ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
