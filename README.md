@@ -90,27 +90,35 @@ Consider adding any helpful links or notes to help remind you in the future, if 
 
 ### Flowchart
 
+```mermaid
+flowchart TD
+    A[Welcome message] -->|Enter user name| B(Welcome 'user', choose a category?)
+    B -->|Capitals| C[Laptop]
+    B -->|Currencies| C[Question loop]
+    B -->|User error| F[Error message]
+    C -->|Option A| D[Question loop]
+    C -->|Option B| D[Question loop]
+    C -->|Option C| D[Question loop]
+    C -->|Option D| D[Question loop]
+    C -->|User error| F[Error message]
+    D -->|Correct| E[Question loop]
+    D -->|Incorrect| E[Question loop]
+    E --> G[Game result]
+    G --> H[Play again?]
+    H -->|Yes| B
+    H -->|No| I[Game over]
+    H -->|User error| F
+```
+
 To follow best practice, a flowchart was created for the app's logic,
 and mapped out before coding began using a free version of
-[Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning) and/or [Draw.io](https://www.draw.io).
+[Mermaid](https://mermaid.live/edit#pako:eNqNkttqwzAMhl9F-KYbtC-Qi5XmsLawI9sYI-mFcNQ0kFjBsTdK03efk3SjGaWrL4yQPv_I0r8TklMSnlgX_CU3qA28hokCd2bxOxWSS4KS6hozWsFkctNEypAGW7tLYUkN-Fc_3KjNjsYgN8w1AYJEQxnr7fS6l_Q7hQCr3GBRNxDEd1gZrlaDstWalMypA54t1SZnBQX_4d7aFkhr1g3cxlEb_Hbac0HHPVbd-1kD4Um1AeVfRAUXUeF56v_-w34e7OYhTQPRSbEeWip5HotaDObx3O0MNNW2MIfKvKss4qcCt4AZ5mp6qCw66Y92Ef5x5oEbWPZK_El6QA9-JcaiJF1injqH7VosEWZDJSXCc2FKa3R9JCJRe4eiNfyyVVJ4RlsaC1ulzj9hjpnGUnhrZxmXpTQ3rO9713bm3X8D71XnVw)
 
 Below is the flowchart of the main process of this Python program. It shows the entire cycle of the program.
 
-![screenshot](documentation/flowchart.png)
+![screenshot](documentation/mermaid-screenshot.png)
 
-### Classes & Functions
-
-The program uses classes as a blueprint for the project's objects (OOP). This allows for the object to be reusable.
-
-```python
-class Person:
-    """ Insert docstring comments here """
-    def __init__(self, name, age, health, inventory):
-        self.name = name
-        self.age = age
-        self.health = health
-        self.inventory = inventory
-```
+### Functions
 
 The primary functions used on this application are:
 
