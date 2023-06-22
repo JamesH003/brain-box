@@ -266,17 +266,16 @@ Ideally, you should provide an actual link to every resource used, not just a ge
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
-| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
+| [geeksforgeeks](https://www.geeksforgeeks.org/python-string-ascii_lowercase/) | question options | lowercase letters |
+| [Real Python](https://realpython.com/python-enumerate/) | quiz page | add counter to iterable |
+| [W3schools](https://www.w3schools.com/python/ref_func_min.asp) | quiz page | min function |
+| [W3schools](https://www.w3schools.com/python/ref_random_choices.asp) | quiz page | random choice method |
+| [W3schools](https://www.w3schools.com/python/ref_random_sample.asp) | quiz page | random sample method |
+| [Ask Python](https://www.askpython.com/python/examples/plus-equal-operator) | quiz page | the += operator |
+| [Stack Overflow](https://stackoverflow.com/questions/2084508/clear-terminal-in-python) | entire site | clear the terminal |
+| [Real Python](https://realpython.com/python-sleep/) | enitre site | time delay for text |
+| [Youtube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | entire site | use of colorama on terminal |
+| [Real Python](https://realpython.com/python-quiz-application/#step-3-organize-your-code-with-functions) | entire site | python quiz tutorial |
 
 ### Media
 
