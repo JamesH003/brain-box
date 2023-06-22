@@ -3,41 +3,10 @@
 Welcome to Brainbox! Brainbox is a Python terminal quiz game with the theme being general knowledge. Users will answer ten questions based on world capitals or world currencies depending on their preference. Brainbox is aimed at people of all ages and may be useful to those hoping to learn a little more about world currencies and capitals. The site is very intuitive and easy to navigate.
 
 ![screenshot](documentation/amiresponsive.png)
-<!-- ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
-
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
-
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
-
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://brainbox-ecc27e367bd0.herokuapp.com
-
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
-
-
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑 -->
 
 ## UX
 
-<!-- ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑 -->
+As this site is confined to the Python terminal the design process was very straight forward. For ease of use and to enhance the user experience I utilised newline spacing where appropriate. I also used coloured text by importing Colorama. This helps to emphasise and differentiate between instructions, questions, right and wrong answers and also user input errors. 
 
 ## Features
 
