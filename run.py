@@ -198,15 +198,3 @@ def get_user_selection(question, options):
 if __name__ == "__main__":
     clear()
     welcome()
-
-
-# References
-# https://www.geeksforgeeks.org/python-string-ascii_lowercase/
-# https://realpython.com/python-enumerate/
-# https://www.w3schools.com/python/ref_func_min.asp
-# https://emojipedia.org/search/?q=flags
-# https://www.w3schools.com/python/ref_random_choices.asp
-# https://www.w3schools.com/python/ref_random_sample.asp
-# https://stackoverflow.com/questions/2084508/clear-terminal-in-python
-# https://realpython.com/python-sleep/
-# https://www.youtube.com/watch?v=u51Zjlnui4Y
