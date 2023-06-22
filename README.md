@@ -114,20 +114,26 @@ class Person:
 
 The primary functions used on this application are:
 
-- `get_sales_data()`
-    - Get sales figures input from the user.
-- `validate_data()`
-    - Converts all string values into integers.
-- `update_worksheet()`
-    - Update the relevant worksheet with the data provided.
-- `calculate_surplus_data()`
-    - Compare sales with stock and calculate the surplus for each item type.
-- `get_last_5_entries_sales()`
-    - Collects columns of data from sales worksheet.
-- `calculate_stock_data()`
-    -  Calculate the average stock for each item type, adding 10%.
-- `main()`
-    - Run all program functions.
+- `welcome()`
+    - Welcome message, name validation & starts quiz.
+- `launch_quiz()`
+    - Starts the quiz.
+- `validate_name()`
+    - Validate that the user's name is valid.
+- `validate_category()`
+    - Ensure the user is selecting a valid category.
+- `loop_questions()`
+    - Main function loop.
+- `play_again()`
+    -  Ask the user if they want to play again.
+- `load_question_options()`
+    -  Loads questions and returns random order.
+- `show_next_question()`
+    -  Calls next question and verifies right or wrong user selection.
+- `get_user_selection()`
+    -  Handles user input, labels options with ascii lowercase.
+- `clear()`
+    -  Clear function to clean-up the terminal so things don't get messy.
 
 ### Imports
 
