@@ -295,15 +295,9 @@ by sending yourself the following command: `!freemedia`.
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+| [Emojipedia](https://emojipedia.org/search/?q=flags) | quiz page | emojis | flags in questions and right and wrong emojis |
+| [Britannica](https://www.britannica.com/quiz/capital-cities-of-the-world-quiz) | quiz page | content | capitals question content |
+| [Jetpunk](https://www.jetpunk.com/quizzes/name-currency) | quiz page | content | currencies question content |
 
 ### Acknowledgements
 
