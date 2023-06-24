@@ -7,10 +7,13 @@ colorama.init(autoreset=True)
 from string import ascii_lowercase
 from questions import QUESTIONS_CAPITALS, QUESTIONS_CURRENCIES
 
+colorama.init(autoreset=True)
+
 MAX_QUESTIONS = 10
 CATEGORY = None
 QUESTIONS = None
 NAME = ""
+
 
 def clear():
     """
@@ -68,7 +71,9 @@ def validate_name():
 
         if not NAME.isalpha() or len(NAME) < 2 or len(NAME) > 15:
             clear()
-            print(f"{Fore.RED}{Style.BRIGHT}{NAME!r} is an invalid name. Please type 2-15 letters.")
+            print(
+                f"{Fore.RED}{Style.BRIGHT}{NAME!r} "
+                "is an invalid name. Please type 2-15 letters.")
         else:
             break
 
@@ -83,7 +88,9 @@ def validate_category():
     print(f"{Style.BRIGHT}Please choose a category: ")
 
     while True:
-        category = input(f"{Fore.GREEN}{Style.BRIGHT}1. Capitals \n2. Currencies\n")
+        category = input(
+            f"{Fore.GREEN}{Style.BRIGHT}"
+            "1. Capitals \n2. Currencies\n")
         clear()
 
         if category == "1":
@@ -95,7 +102,9 @@ def validate_category():
             CATEGORY = QUESTIONS_CURRENCIES
             break
         else:
-            print(f"{Fore.RED}{Style.BRIGHT}{category!r} is an invalid option. Please select 1 or 2.")
+            print(
+                f"{Fore.RED}{Style.BRIGHT}{category!r} "
+                "is an invalid option. Please select 1 or 2.")
 
 
 def loop_questions():
@@ -119,7 +128,8 @@ def loop_questions():
     q = "question" if correct_answers == 1 else "questions"
     print(
         f"{Fore.YELLOW}{Style.BRIGHT}\nCongratulations {NAME}!! "
-        f"{Fore.MAGENTA}{Style.BRIGHT}You got {correct_answers} {q} right out of {num}!\n"
+        f"{Fore.MAGENTA}{Style.BRIGHT}"
+        f"You got {correct_answers} {q} right out of {num}!\n"
     )
     time.sleep(0.05)
 
@@ -134,7 +144,9 @@ def play_again():
     global NAME
 
     while True:
-        again = input(f"{Fore.CYAN}{Style.BRIGHT}Do you want to play again? (yes/no)\n").lower()
+        again = input(
+            f"{Fore.CYAN}{Style.BRIGHT}"
+            "Do you want to play again? (yes/no)\n").lower()
         clear()
         if again[0] == "y":
             print(f"{Fore.YELLOW}{Style.BRIGHT}... Loading Game ...")
@@ -143,10 +155,14 @@ def play_again():
             launch_quiz()
             break
         elif again[0] == "n":
-            print(f"{Fore.CYAN}{Style.BRIGHT}Thank you for playing Brainbox, {NAME}!")
+            print(
+                f"{Fore.CYAN}{Style.BRIGHT}"
+                f"Thank you for playing Brainbox, {NAME}!")
             break
         else:
-            print(f"{Fore.RED}{Style.BRIGHT}{again!r} is not valid. Please type 'Y' or 'N'")
+            print(
+                f"{Fore.RED}{Style.BRIGHT}{again!r} "
+                "is not valid. Please type 'Y' or 'N'")
 
 
 def load_question_options(questions, max_questions):
@@ -173,7 +189,8 @@ def show_next_question(question, options):
     else:
         print(
             f"{Fore.RED}{Style.BRIGHT}\nWrong! ❌ "
-            f"{Fore.CYAN}{Style.BRIGHT} The correct answer is {correct_option!r}, not {answer!r}"
+            f"{Fore.CYAN}{Style.BRIGHT} "
+            f"The correct answer is {correct_option!r}, not {answer!r}"
         )
         time.sleep(0.05)
         return False
@@ -188,8 +205,13 @@ def get_user_selection(question, options):
     for label, option in labeled_options.items():
         print(f"  {label}) {option}")
     # Handles user errors
-    while (answer_label := input(f"{Fore.CYAN}{Style.BRIGHT}\nAnswer? ").lower()) not in labeled_options:
-        print(f"{Fore.RED}{Style.BRIGHT}Please answer one of {', '.join(labeled_options)}")
+    while (
+         answer_label := input(
+              f"{Fore.CYAN}"
+              f"{Style.BRIGHT}\nAnswer? ").lower()) not in labeled_options:
+        print(
+            f"{Fore.RED}{Style.BRIGHT}"
+            f"Please answer one of {', '.join(labeled_options)}")
 
     return labeled_options[answer_label]
 
