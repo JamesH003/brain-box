@@ -24,7 +24,7 @@ QUESTIONS_CAPITALS = {
         "New Delhi", "Riyadh", "Manama", "Kuala Lumpur"
     ],
     "What is the capital city of Switzerland? 🇨🇭": [
-        "Bern", "Zurich", "Belgrade", "Roseau" 
+        "Bern", "Zurich", "Belgrade", "Roseau"
     ],
     "What is the capital city of Austria? 🇦🇹": [
         "Vienna", "Berlin", "Moroni", "Tallinn"
@@ -53,10 +53,10 @@ QUESTIONS_CAPITALS = {
     "What is the capital city of Germany? 🇩🇪": [
         "Berlin", "Yaren district", "Munich", "Brussels"
     ],
-     "What is the capital city of Slovakia? 🇸🇰": [
+    "What is the capital city of Slovakia? 🇸🇰": [
         "Bratislava", "Kyiv", "Bucharest", "Athens"
      ],
-     "What is the capital city of Ireland? 🇮🇪": [
+    "What is the capital city of Ireland? 🇮🇪": [
         "Dublin", "Cardiff", "Paris", "Cork"
      ]
 }
@@ -87,7 +87,7 @@ QUESTIONS_CURRENCIES = {
         "Won", "Rial", "Yuan", "Dollar"
     ],
     "What is the currency of Turkey? 🇹🇷": [
-        "Lira", "Pound", "Rial", "Rupee" 
+        "Lira", "Pound", "Rial", "Rupee"
     ],
     "What is the currency of Australia? 🇦🇺": [
         "Dollar", "Pound", "Baht", "Peso"
@@ -116,10 +116,10 @@ QUESTIONS_CURRENCIES = {
     "What is the currency of Israel? 🇮🇱": [
         "Shekel", "Yen", "Dollar", "Euro"
     ],
-     "What is the currency of Nepal? 🇳🇵": [
+    "What is the currency of Nepal? 🇳🇵": [
         "Rupee", "Pound", "Rial", "Won"
      ],
-     "What is the currency of Iceland? 🇮🇸": [
+    "What is the currency of Iceland? 🇮🇸": [
         "Krona", "Euro", "Yen", "Dinar"
      ]
 }
