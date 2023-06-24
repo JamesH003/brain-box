@@ -3,7 +3,6 @@ import os
 import time
 import colorama
 from colorama import Fore, Back, Style
-colorama.init(autoreset=True)
 from string import ascii_lowercase
 from questions import QUESTIONS_CAPITALS, QUESTIONS_CURRENCIES
 
@@ -28,7 +27,6 @@ def welcome():
     """
     global NAME
 
-    
     print(f"{Fore.CYAN}{Style.BRIGHT} \nWelcome to Brainbox!\n")
     time.sleep(1)
 
@@ -171,7 +169,6 @@ def load_question_options(questions, max_questions):
     """
     max_questions = min(max_questions, len(questions))
     return random.sample(list(questions.items()), k=max_questions)
-
 
 
 def show_next_question(question, options):
