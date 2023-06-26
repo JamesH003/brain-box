@@ -46,7 +46,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Chrome | ![screenshot](documentation/testing/chrome-testing.png) | Works as expected |
 | Firefox | ![screenshot](documentation/testing/firefox-testing.png) | Works as expected |
 | Edge | ![screenshot](documentation/testing/edge-testing.png) | Works as expected |
-| Safari | ![screenshot](documentation/browser-safari.png) | Minor CSS differences |
+| Safari | ![screenshot](documentation/testing/safari-testing.png) | Does not work on Safari |
 | Brave | ![screenshot](documentation/testing/brave-testing.png) | Works as expected |
 | Opera | ![screenshot](documentation/testing/opera-testing.png) | Works as expected |
 
@@ -95,30 +95,6 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Home | Desktop | ![screenshot](documentation/testing/lighthouse-testing.png) | Few warnings |
 
 ## Defensive Programming
-
-<!-- ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑 -->
 
 Defensive programming was manually tested with the below user acceptance testing:
 
