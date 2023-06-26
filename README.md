@@ -6,7 +6,7 @@ Welcome to Brainbox! Brainbox is a Python terminal quiz game with the theme bein
 
 ## UX
 
-As this site is confined to the Python terminal the design process was very straight forward. For ease of use and to enhance the user experience I utilised newline spacing where appropriate. I also used coloured text by importing Colorama. This helps to emphasise and differentiate between instructions, questions, right and wrong answers and also user input errors. 
+As this site is confined to the Python mock terminal the design process was very straight forward. For ease of use and to enhance the user experience I utilised newline spacing where appropriate. I also used coloured text by importing Colorama. This helps to emphasise and differentiate between instructions, questions, right and wrong answers and also user input errors. 
 
 ## Features
 
