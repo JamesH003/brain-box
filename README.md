@@ -65,6 +65,7 @@ As this site is confined to the Python mock terminal the design process was very
 
 - Additional categories
     - I'd like to add multiple additional categories to the quiz to increase the difficulty and user experience of the game.
+    - I'd like to make the game responsive in it's design to allow it to be played on mobile and tablet devices.
 
 
 ## Tools & Technologies Used
