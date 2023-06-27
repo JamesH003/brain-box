@@ -48,16 +48,16 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 Defensive programming was manually tested with the below user acceptance testing:
 
-| Page | User Action | Expected Result | Pass/Fail | Comments |
+| Page | User Action | Expected Result | Pass/Fail | Screenshot |
 | --- | --- | --- | --- | --- |
 | Name Input | | | | |
-| | Enter a name | Field will only accept 2-15 letters | Pass | |
+| | Enter a name | Field will only accept 2-15 letters | Pass | ![screenshot](documentation/testing/def-prog-min-letters.png) |
 | Category Selection | | | | |
-| | Enter 1 or 2 to choose a category | Field will only accept 1 or 2 | Pass | |
+| | Enter 1 or 2 to choose a category | Field will only accept 1 or 2 | Pass | ![screenshot](documentation/testing/def-prog-numbers.png) |
 | Answer Input | | | | |
-| | Enter a,b,c,d to select an answer | Field will only accept the letters a,b,c,d uppercase or lowercase | Pass | |
+| | Enter a,b,c,d to select an answer | Field will only accept the letters a,b,c,d uppercase or lowercase | Pass | ![screenshot](documentation/testing/def-prog-abcd.png) |
 | Play Again | | | | |
-| | Enter yes/no to play again | Field will accept any input that begin with y or n | Pass | |
+| | Enter yes/no to play again | Field will accept any input that begin with y or n | Pass | ![screenshot](documentation/testing/def-prog-yn.png) |
 
 
 ## Bugs
